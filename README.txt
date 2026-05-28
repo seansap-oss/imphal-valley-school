@@ -1,2 +1,1 @@
-Static Vercel build. No npm, no package.json, no build command needed.
-Upload all files to GitHub. In Vercel leave framework as Other/Static, Build Command empty, Output Directory empty or ./
+Static Vercel website. Upload all files to GitHub. In Vercel set Framework: Other, Build Command empty, Output Directory empty. No npm/package.json needed.
