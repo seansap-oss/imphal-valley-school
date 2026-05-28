@@ -1,32 +1,218 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Imphal Valley School</title>
+
 <style>
-body{margin:0;font-family:Arial,sans-serif;background:#08140f;color:white}
-.hero{min-height:100vh;background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.7)),url('campus.jpg') center/cover no-repeat;display:flex;align-items:center;justify-content:space-between;padding:60px;gap:40px;flex-wrap:wrap}
-h1{font-size:72px;line-height:.95;margin:0}
-.gold{color:#d9b25f}
-.logo-wrap{position:relative}
-.ring{position:absolute;inset:-40px;border:2px solid rgba(217,178,95,.5);border-radius:50%;animation:spin 18s linear infinite}
-.logo{width:420px;max-width:90vw;animation:float 4s ease-in-out infinite}
-@keyframes spin{to{transform:rotate(360deg)}}
-@keyframes float{50%{transform:translateY(-12px)}}
-@media(max-width:768px){h1{font-size:48px}.hero{padding:30px;text-align:center;justify-content:center}}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#07110d;
+color:white;
+overflow-x:hidden;
+}
+
+.hero{
+min-height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.70),rgba(0,0,0,.78)),
+url('campus.jpg') center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:60px;
+gap:40px;
+flex-wrap:wrap;
+position:relative;
+}
+
+.topbar{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+padding:18px 50px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.35);
+backdrop-filter:blur(10px);
+}
+
+.brand{
+display:flex;
+align-items:center;
+gap:16px;
+}
+
+.logo{
+width:72px;
+height:auto;
+}
+
+.brand h2{
+font-size:34px;
+line-height:1;
+font-weight:800;
+}
+
+.hero-content{
+max-width:650px;
+z-index:5;
+margin-top:90px;
+}
+
+.hero h1{
+font-size:88px;
+line-height:.92;
+font-weight:900;
+margin-bottom:20px;
+}
+
+.gold{
+color:#d8b25f;
+}
+
+.hero p{
+font-size:22px;
+line-height:1.7;
+opacity:.9;
+max-width:620px;
+}
+
+.logo-wrap{
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center;
+margin-top:60px;
+}
+
+.hero-logo{
+width:440px;
+max-width:90vw;
+position:relative;
+z-index:3;
+animation:premiumFloat 4.5s ease-in-out infinite;
+filter:drop-shadow(0 30px 45px rgba(0,0,0,.7));
+}
+
+.orbit-ring{
+position:absolute;
+width:540px;
+height:540px;
+border:1.5px solid rgba(216,178,95,.6);
+border-radius:50%;
+animation:orbitRotate 18s linear infinite;
+}
+
+.orbit-ring-2{
+width:470px;
+height:470px;
+border-color:rgba(255,215,120,.25);
+animation-duration:26s;
+animation-direction:reverse;
+}
+
+@keyframes orbitRotate{
+to{
+transform:rotate(360deg);
+}
+}
+
+@keyframes premiumFloat{
+0%,100%{
+transform:translateY(0) rotateY(0deg);
+}
+50%{
+transform:translateY(-14px) rotateY(4deg);
+}
+}
+
+@media(max-width:900px){
+
+.hero{
+padding:30px;
+justify-content:center;
+text-align:center;
+}
+
+.topbar{
+padding:15px 20px;
+}
+
+.brand h2{
+font-size:22px;
+}
+
+.logo{
+width:55px;
+}
+
+.hero h1{
+font-size:54px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.hero-logo{
+width:290px;
+}
+
+.orbit-ring{
+width:340px;
+height:340px;
+}
+
+.orbit-ring-2{
+width:290px;
+height:290px;
+}
+}
 </style>
 </head>
+
 <body>
+
 <section class="hero">
-<div>
-<h1>Inspiring Excellence.<br><span class="gold">Shaping Tomorrow.</span></h1>
-<p>A premium modern school website presentation.</p>
-</div>
-<div class="logo-wrap">
-<div class="ring"></div>
+
+<div class="topbar">
+<div class="brand">
 <img src="logo.png" class="logo">
+<h2>IMPHAL VALLEY SCHOOL</h2>
 </div>
+</div>
+
+<div class="hero-content">
+<h1>
+Inspiring Excellence.<br>
+<span class="gold">Shaping Tomorrow.</span>
+</h1>
+
+<p>
+A premier institution committed to academic excellence,
+character building, and holistic development in the heart of Manipur.
+</p>
+</div>
+
+<div class="logo-wrap">
+<div class="orbit-ring"></div>
+<div class="orbit-ring orbit-ring-2"></div>
+
+<img src="logo.png" class="hero-logo">
+</div>
+
 </section>
+
 </body>
 </html>
