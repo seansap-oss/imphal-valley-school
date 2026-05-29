@@ -1,1 +1,1 @@
-Upload index.html and assets folder to GitHub. Vercel: Framework Other, Build Command empty, Output Directory empty.
+Upload index.html and assets folder to GitHub. Vercel settings: Framework Other, Build Command empty, Output Directory empty.
